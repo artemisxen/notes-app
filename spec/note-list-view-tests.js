@@ -1,5 +1,6 @@
 describe("Note list view", function() {
   var noteList = new NoteList();
+  // var noteListMock = new MockObject('noteList', ['addNote', 'list', 'returnNotes'])
   var noteListView = new NoteListView(noteList);
   var HTMLstring = "<ul><li><div>test</div></li><li><div>test 2</div></li></ul>";
   var HTMLstringEmpty = "<ul></ul>";

@@ -26,9 +26,9 @@
   };
 
   var MockObject = function(name) {
+    if(!arguments[1]) { return; }
     arguments[1].forEach(function(func) {
-      console.log(func);
-      MockObject.prototype.func = function() {};
+      MockObject.prototype[func] = function() {};
     });
   };
 

@@ -1,5 +1,5 @@
 describe("Note list", function() {
-  var noteList = new NoteList();
+  var noteList = new NoteList(MockObject);
 
   it("starts with an empty array", function() {
     assert.isTrue(noteList.notes.length === 0);
